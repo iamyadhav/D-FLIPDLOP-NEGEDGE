@@ -1,5 +1,8 @@
 # D-FLIPDLOP-NEGEDGE
+## NAME : YADHAV G P
+## REG NO : 212223230247
 
+## DATE : 
 **AIM:**
 
 To implement  D flipflop using verilog and validating their functionality using their functional tables
@@ -32,13 +35,30 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
 
+```
+module ex8(D,clk,Q,Qbar);
+input D,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=D;
+Qbar=~D;
+end
+endmodule
+```
 **RTL LOGIC FOR FLIPFLOPS**
+
+![Screenshot 2025-05-02 110828](https://github.com/user-attachments/assets/ddfe6ffc-a074-4df4-be09-0c84167c1a4c)
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
+![Screenshot 2025-05-02 111010](https://github.com/user-attachments/assets/2652fe9b-2f89-47b1-b2c4-be8d42e1366b)
 
 **RESULTS**
+
+To implement  D flipflop using verilog and validating their functionality using their functional tables was successful 
